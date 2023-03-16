@@ -1,0 +1,27 @@
+.nav__bar,
+.nav__toogle-item::before,
+.nav__toogle-item::after {
+    animation: nav__toogle-animation 3s ease-out;
+    /* animation-iteration-count: nav__toogle-animation 1; */
+    -webkit-animation: nav__toogle-animation 3s ease-out;
+    /* -webkit-animation-iteration-count: 1; */
+}
+
+@keyframes nav__toogle-animation {
+    0% {opacity:1};
+    25% {opacity:0,8};
+    50% {opacity:0,5};
+    75% {opacity:0,2};
+    100% {opacity:0};
+}
+@-webkit-keyframes nav__toogle-animation {
+    0% {opacity:1};
+    25% {opacity:0,8};
+    50% {opacity:0,5};
+    75% {opacity:0,2};
+    100% {opacity:0};
+}
+.theme-switch__icon:hover {
+    transition: transform 150ms ease-in-out;
+    transform: rotate(180deg);
+}
